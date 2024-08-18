@@ -53,39 +53,39 @@ $total_comments = $select_comments->rowCount();
    <div class="box-container">
 
       <div class="box">
-         <h3><i class="fa fa-user" aria-hidden="true"></i></h3>
-         <p>total contents</p>
+         <h3>welcome!</h3>
+         <p><?= $fetch_profile['name']; ?></p>
          <a href="profile.php" class="btn">Profile</a>
       </div>
 
       <div class="box">
-         <h3><i class="fa fa-upload" aria-hidden="true"></i></h3>
-         <p>total contents</p>
-         <a href="add_content.php" class="btn">Uploading</a>
+         <h3><?= $total_contents; ?></h3>
+         <p>upload Notes</p>
+         <a href="add_content.php" class="btn">upload</a>
       </div>
 
       <div class="box">
-         <h3><i class="fa fa-line-chart" aria-hidden="true"></i></h3>
-         <p>total playlists</p>
-         <a href="add_playlist.php" class="btn">Analytics</a>
+         <h3><?= $total_playlists; ?></h3>
+         <p>View Calendar</p>
+         <a href="add_playlist.php" class="btn">Calendar</a>
       </div>
 
       <div class="box">
-         <h3><i class="fa fa-credit-card-alt" aria-hidden="true"></i></h3>
-         <p>total likes</p>
-         <a href="contents.php" class="btn">Revenue</a>
+         <h3><?= $total_likes; ?></h3>
+         <p>View Analytics</p>
+         <a href="contents.php" class="btn">Analytics</a>
       </div>
 
       <div class="box">
-         <h3><i class="fa fa-comments" aria-hidden="true"></i></h3>
-         <p>total comments</p>
+         <h3><?= $total_comments; ?></h3>
+         <p>User's Comments</p>
          <a href="comments.php" class="btn">Comments</a>
       </div>
 
       <div class="box">
-         <h3><i class="fa fa-calendar" aria-hidden="true"></i></h3>
-         <p>total comments</p>
-         <a href="comments.php" class="btn">Calendar</a>
+         <h3><?= $total_comments; ?></h3>
+         <p>View Revenues</p>
+         <a href="comments.php" class="btn">Revenue</a>
       </div>
    </div>
 
@@ -104,8 +104,6 @@ $total_comments = $select_comments->rowCount();
 
 
 
-
-<!-- <?php include '../components/footer.php'; ?> -->
 
 <script src="../js/admin_script.js"></script>
 

@@ -53,13 +53,12 @@ $total_bookmarked = $select_bookmark->rowCount();
          if($user_id != ''){
       ?>
       <div class="box">
-         <h3 class="title">likes and comments</h3>
-         <p>total likes : <span><?= $total_likes; ?></span></p>
-         <a href="likes.php" class="inline-btn">view likes</a>
-         <p>total comments : <span><?= $total_comments; ?></span></p>
-         <a href="comments.php" class="inline-btn">view comments</a>
-         <p>saved playlist : <span><?= $total_bookmarked; ?></span></p>
-         <a href="bookmark.php" class="inline-btn">view bookmark</a>
+         <h3 class="title">Video Courses</h3>
+         <div class="box tutor">
+         <h3 class="title">Available Courses</h3>
+         <p>Select the appropriate university to view on the courses.</p>
+         <a href="University_list.php" class="inline-btn">get started</a>
+      </div>
       </div>
       <?php
          }else{ 
@@ -100,13 +99,35 @@ $total_bookmarked = $select_bookmark->rowCount();
             <a href="#"><i class="fab fa-bootstrap"></i><span>bootstrap</span></a>
          </div>
       </div>
+    <div class="box-video">
+      <div class="container">
+        <div class="video-container">
+            <div class="video-card">
+                <img src="thumbnail1.jpg" alt="Video 1 Thumbnail">
+                <div class="video-info">
+                    <h3 class="video-title">Introduction to Programming</h3>
+                    <p class="video-description">Learn the basics of programming in this introductory course.</p>
+                </div>
+            </div>
 
-      <div class="box tutor">
-         <h3 class="title">become a tutor</h3>
-         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa, laudantium.</p>
-         <a href="admin/register.php" class="inline-btn">get started</a>
+            <div class="video-card">
+                <img src="thumbnail2.jpg" alt="Video 2 Thumbnail">
+                <div class="video-info">
+                    <h3 class="video-title">Advanced Algorithms</h3>
+                    <p class="video-description">Explore complex algorithms and their applications in computer science.</p>
+                </div>
+            </div>
+
+            <div class="video-card">
+                <img src="thumbnail3.jpg" alt="Video 3 Thumbnail">
+                <div class="video-info">
+                    <h3 class="video-title">Web Development Fundamentals</h3>
+                    <p class="video-description">Get started with HTML, CSS, and JavaScript in this web development course.</p>
+                </div>
+            </div>
+        </div>
       </div>
-
+    </div> 
    </div>
 
 </section>

@@ -15,7 +15,14 @@ if(isset($message)){
 
    <section class="flex">
 
-      <a href="home.php" class="logo">Educa.</a>
+         <?php
+            $select_profile = $conn->prepare("SELECT * FROM `users` WHERE id = ?");
+            $select_profile->execute([$user_id]);
+            if($select_profile->rowCount() > 0){
+            $fetch_profile = $select_profile->fetch(PDO::FETCH_ASSOC); }
+         ?>
+
+      <a href="home.php" class="logo">Hello <?= $fetch_profile['name']; ?> </a>
 
       <form action="search_course.php" method="post" class="search-form">
          <input type="text" name="search_course" placeholder="search courses..." required maxlength="100">
@@ -40,10 +47,6 @@ if(isset($message)){
          <h3><?= $fetch_profile['name']; ?></h3>
          <span>student</span>
          <a href="profile.php" class="btn">view profile</a>
-         <div class="flex-btn">
-            <a href="login.php" class="option-btn">login</a>
-            <a href="register.php" class="option-btn">register</a>
-         </div>
          <a href="components/user_logout.php" onclick="return confirm('logout from this website?');" class="delete-btn">logout</a>
          <?php
             }else{

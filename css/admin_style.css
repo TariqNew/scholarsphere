@@ -205,7 +205,7 @@ section{
    width: 50rem;
    border-radius: .5rem;
    display: flex;
-   margin-left: 10rem;
+   margin-left: 2rem;
    align-items: center;
    gap: 2rem;
    padding: 1.5rem 2rem;
@@ -228,6 +228,11 @@ section{
 
 .header .flex .search-form button:hover{
    color: var(--main-color);
+}
+
+.header .flex .icons{
+   display: flex;
+   flex-direction: row;
 }
 
 .header .flex .icons div{
