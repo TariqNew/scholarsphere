@@ -35,7 +35,6 @@ $total_bookmarked = $select_bookmark->rowCount();
 
    <!-- custom css file link  -->
    <link rel="stylesheet" href="css/style.css">
-
 </head>
 <body>
 
@@ -44,21 +43,53 @@ $total_bookmarked = $select_bookmark->rowCount();
 <!-- quick select section starts  -->
 
 <section class="quick-select">
-
    <h1 class="heading">quick options</h1>
-
+   <div class="box-video">
+      <h1 class="heading1">Video Courses</h1>
+      <div class="container">
+        <div class="video-container">
+        <div class="video-youtube">
+               <img src="https://img.youtube.com/vi/dQw4w9WgXcQ/hqdefault.jpg" alt="Video Thumbnail" class="thumbnail">
+               <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank">
+                  <div class="play-button"></div>
+               </a>
+               <div class="card-content">
+                  <h3>Never Gonna Give You Up</h3>
+                  <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank">Watch on YouTube</a>
+               </div>
+            </div>
+            <div class="video-youtube">
+               <img src="https://img.youtube.com/vi/dQw4w9WgXcQ/hqdefault.jpg" alt="Video Thumbnail" class="thumbnail">
+               <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank">
+                  <div class="play-button"></div>
+               </a>
+               <div class="card-content">
+                  <h3>Never Gonna Give You Up</h3>
+                  <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank">Watch on YouTube</a>
+               </div>
+            </div>
+            <div class="video-youtube">
+               <img src="https://img.youtube.com/vi/dQw4w9WgXcQ/hqdefault.jpg" alt="Video Thumbnail" class="thumbnail">
+               <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank">
+                  <div class="play-button"></div>
+               </a>
+               <div class="card-content">
+                  <h3>Never Gonna Give You Up</h3>
+                  <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank">Watch on YouTube</a>
+               </div>
+            </div>
+        </div>
+      </div><br>
+    </div>
    <div class="box-container">
 
       <?php
          if($user_id != ''){
       ?>
       <div class="box">
-         <h3 class="title">Video Courses</h3>
-         <div class="box tutor">
          <h3 class="title">Available Courses</h3>
          <p>Select the appropriate university to view on the courses.</p>
          <a href="University_list.php" class="inline-btn">get started</a>
-      </div>
       </div>
       <?php
          }else{ 
@@ -99,35 +130,7 @@ $total_bookmarked = $select_bookmark->rowCount();
             <a href="#"><i class="fab fa-bootstrap"></i><span>bootstrap</span></a>
          </div>
       </div>
-    <div class="box-video">
-      <div class="container">
-        <div class="video-container">
-            <div class="video-card">
-                <img src="thumbnail1.jpg" alt="Video 1 Thumbnail">
-                <div class="video-info">
-                    <h3 class="video-title">Introduction to Programming</h3>
-                    <p class="video-description">Learn the basics of programming in this introductory course.</p>
-                </div>
-            </div>
-
-            <div class="video-card">
-                <img src="thumbnail2.jpg" alt="Video 2 Thumbnail">
-                <div class="video-info">
-                    <h3 class="video-title">Advanced Algorithms</h3>
-                    <p class="video-description">Explore complex algorithms and their applications in computer science.</p>
-                </div>
-            </div>
-
-            <div class="video-card">
-                <img src="thumbnail3.jpg" alt="Video 3 Thumbnail">
-                <div class="video-info">
-                    <h3 class="video-title">Web Development Fundamentals</h3>
-                    <p class="video-description">Get started with HTML, CSS, and JavaScript in this web development course.</p>
-                </div>
-            </div>
-        </div>
-      </div>
-    </div> 
+ 
    </div>
 
 </section>
@@ -192,10 +195,6 @@ $total_bookmarked = $select_bookmark->rowCount();
 
 
 
-
-<!-- footer section starts  -->
-<?php include 'components/footer.php'; ?>
-<!-- footer section ends -->
 
 <!-- custom js file link  -->
 <script src="js/script.js"></script>

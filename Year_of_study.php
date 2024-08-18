@@ -30,7 +30,7 @@ if(isset($_COOKIE['user_id'])){
 
 <?php include 'components/user_header.php'; ?>
 <div class="header-new">
-    <h1>University List</h1>
+    <h1>Available Courses</h1>
 </div>
 <div class="page-content page-container" id="page-content">
    <div class="padding">
@@ -39,9 +39,9 @@ if(isset($_COOKIE['user_id'])){
            <div class="container-fluid d-flex justify-content-center">
             <div class="list list-row card" id="sortable" data-sortable-id="0" aria-dropeffect="move">
                <div class="list-item" data-id="13" data-item-sortable-id="0" draggable="true" role="option" aria-grabbed="false" style="">
-                  <div><a href="#" data-abc="true"><span class="w-40 avatar"><img src="images/ifm.png" alt=""></span></a></div>
+                  <div><a href="#" data-abc="true"><span class="w-40 avatar">1</span></a></div>
                   <div class="flex">
-                      <h2><a href="Year_of_study.php" class="item-author text-color" data-abc="true">Institute Of finance Management(IFM)</a></h2>
+                      <h2><a href="notes.php" class="item-author text-color" data-abc="true">Bachelor Degree In Information Technology</a></h2>
                   </div>
                </div>
             </div>
@@ -57,9 +57,9 @@ if(isset($_COOKIE['user_id'])){
            <div class="container-fluid d-flex justify-content-center">
             <div class="list list-row card" id="sortable" data-sortable-id="0" aria-dropeffect="move">
                <div class="list-item" data-id="13" data-item-sortable-id="0" draggable="true" role="option" aria-grabbed="false" style="">
-                  <div><a href="#" data-abc="true"><span class="w-40 avatar"><img src="images/logo.png" alt=""></span></a></div>
+                  <div><a href="#" data-abc="true"><span class="w-40 avatar">2</span></a></div>
                   <div class="flex">
-                      <h2><a href="Year_of_study.php" class="item-author text-color" data-abc="true">National Institute of Transport(NIT)</a></h2>
+                      <h2><a href="  #" class="item-author text-color" data-abc="true">Bachelor Of Degree In Computer Science</a></h2>
                   </div>
                </div>
             </div>
@@ -75,9 +75,9 @@ if(isset($_COOKIE['user_id'])){
            <div class="container-fluid d-flex justify-content-center">
             <div class="list list-row card" id="sortable" data-sortable-id="0" aria-dropeffect="move">
                <div class="list-item" data-id="13" data-item-sortable-id="0" draggable="true" role="option" aria-grabbed="false" style="">
-                  <div><a href="#" data-abc="true"><span class="w-40 avatar"><img src="images/udsm.jpeg" alt=""></span></a></div>
+                  <div><a href="#" data-abc="true"><span class="w-40 avatar">3</span></a></div>
                   <div class="flex">
-                      <h2><a href="Year_of_study.php" class="item-author text-color" data-abc="true">University Of Dar-Es-Salaam(UDSM)</a></h2>
+                      <h2><a href="  #" class="item-author text-color" data-abc="true">Bachelor Degree In Taxation</a></h2>
                   </div>
                </div>
             </div>
@@ -93,9 +93,9 @@ if(isset($_COOKIE['user_id'])){
            <div class="container-fluid d-flex justify-content-center">
             <div class="list list-row card" id="sortable" data-sortable-id="0" aria-dropeffect="move">
                <div class="list-item" data-id="13" data-item-sortable-id="0" draggable="true" role="option" aria-grabbed="false" style="">
-                  <div><a href="#" data-abc="true"><span class="w-40 avatar"><img src="images/dmi.jpeg" alt=""></span></a></div>
+                  <div><a href="#" data-abc="true"><span class="w-40 avatar">4</span></a></div>
                   <div class="flex">
-                      <h2><a href="Year_of_study.php" class="item-author text-color" data-abc="true">Dar-Es-Salaam Maritime Institute(DMI)</a></h2>
+                      <h2><a href="  #" class="item-author text-color" data-abc="true">Bachelor Degree In Banking and Finance</a></h2>
                   </div>
                </div>
             </div>
@@ -111,9 +111,9 @@ if(isset($_COOKIE['user_id'])){
            <div class="container-fluid d-flex justify-content-center">
             <div class="list list-row card" id="sortable" data-sortable-id="0" aria-dropeffect="move">
                <div class="list-item" data-id="13" data-item-sortable-id="0" draggable="true" role="option" aria-grabbed="false" style="">
-                  <div><a href="#" data-abc="true"><span class="w-40 avatar"><img src="images/dit.jpeg" alt=""></span></a></div>
+                  <div><a href="#" data-abc="true"><span class="w-40 avatar">5</span></a></div>
                   <div class="flex">
-                      <h2><a href="#" class="item-author text-color" data-abc="true">Dar-Es-Salaam Institute Of Technology(DIT)</a></h2>
+                      <h2><a href="  #" class="item-author text-color" data-abc="true">Bachelor Degree In Insurance Management</a></h2>
                   </div>
                </div>
             </div>
@@ -129,9 +129,9 @@ if(isset($_COOKIE['user_id'])){
            <div class="container-fluid d-flex justify-content-center">
             <div class="list list-row card" id="sortable" data-sortable-id="0" aria-dropeffect="move">
                <div class="list-item" data-id="13" data-item-sortable-id="0" draggable="true" role="option" aria-grabbed="false" style="">
-                  <div><a href="#" data-abc="true"><span class="w-40 avatar"><img src="images/mwalimu.jpeg" alt=""></span></a></div>
+                  <div><a href="#" data-abc="true"><span class="w-40 avatar">6</span></a></div>
                   <div class="flex">
-                      <h2><a href="Year_of_study.php" class="item-author text-color" data-abc="true">Mwalimu Nyerere Memorial Academy(MNMA)</a></h2>
+                      <h2><a href="  #" class="item-author text-color" data-abc="true">Bachelor Degree In Computer Security</a></h2>
                   </div>
                </div>
             </div>
@@ -147,9 +147,9 @@ if(isset($_COOKIE['user_id'])){
            <div class="container-fluid d-flex justify-content-center">
             <div class="list list-row card" id="sortable" data-sortable-id="0" aria-dropeffect="move">
                <div class="list-item" data-id="13" data-item-sortable-id="0" draggable="true" role="option" aria-grabbed="false" style="">
-                  <div><a href="#" data-abc="true"><span class="w-40 avatar"><img src="images/cbe.jpeg" alt=""></span></a></div>
+                  <div><a href="#" data-abc="true"><span class="w-40 avatar">7</span></a></div>
                   <div class="flex">
-                      <h2><a href="Year_of_study.php" class="item-author text-color" data-abc="true">College Of Business Education(CBE)</a></h2>
+                      <h2><a href="  #" class="item-author text-color" data-abc="true">Bachelor Degree In Archturial Science</a></h2>
                   </div>
                </div>
             </div>

@@ -1,0 +1,240 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;800&display=swap');
+
+:root {
+  --primary-red: hsl(1, 90%, 64%);
+  --primary-blue: hsl(219, 85%, 26%);
+
+  --neutral-white: hsl(0, 0%, 100%);
+  --neutral-very-light-grayish-blue: hsl(210, 60%, 98%);
+  --neutral-light-grayish-blue-1: hsl(211, 68%, 94%);
+  --neutral-light-grayish-blue-2: hsl(205, 33%, 90%);
+  --neutral-dark-grayish-blue: hsl(219, 12%, 42%);
+  --neutral-very-dark-blue: hsl(224, 21%, 14%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-size: 16px;
+  color: var(--neutral-very-dark-blue);
+}
+
+.container {
+  width: 1440px;
+  margin: 0px auto;
+  background: var(--neutral-very-light-grayish-blue);
+  border: 1px solid var(--neutral-very-light-grayish-blue);
+}
+
+.attribution {
+  margin: 50px auto 5px;
+}
+
+.app {
+  width: 700px;
+  margin: 50px auto;
+  background: var(--neutral-white);
+  border-radius: 20px;
+  padding: 15px 25px;
+}
+
+.app .header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 50px;
+}
+
+.header h2 {
+  font-size: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.header h2 .title {
+  font-size: 20px;
+}
+
+.header h2 .unread-notification-number {
+  text-align: center;
+  background: #8e44ad;
+  color: var(--neutral-white);
+  width: 25px;
+  height: 20px;
+  font-size: 14px;
+  border-radius: 5px;
+}
+
+.header p {
+  color: var(--neutral-dark-grayish-blue);
+  cursor: pointer;
+}
+
+.header p:hover {
+  color: var(--primary-blue);
+}
+
+.app .body {
+  margin-top: 15px;
+}
+
+.body .notification {
+  background: #ece2f0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  padding: 15px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all .3s ease-in-out;
+  margin: 10px 0px;
+}
+
+.body .notification:hover {
+  background: var(--neutral-light-grayish-blue-1);
+}
+
+.notification-click {
+  animation: notification-click .5s ease-in-out forwards;
+}
+
+@keyframes notification-click {
+  0% {
+    background: var(--neutral-light-grayish-blue-1);
+  }
+
+  50% {
+    background: var(--neutral-light-grayish-blue-2);
+  }
+
+  100% {
+    background: none;
+  }
+}
+
+.notification .avatar {
+  width: 8%;
+}
+
+.notification .avatar img {
+  width: 100%;
+}
+
+.notification .text {
+  width: 92%;
+}
+
+.text .text-top p {
+  color: var(--neutral-dark-grayish-blue);
+}
+
+.text .text-top p .profil-name {
+  font-weight: 800;
+}
+
+.text .text-top p b {
+  color: var(--neutral-dark-grayish-blue);
+  display: inline-block;
+}
+
+.text .text-top p .unread-dot {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  margin: 0px 0px 1px 7px;
+  border-radius: 50%;
+  background: var(--primary-red);
+}
+
+.text .text-bottom {
+  color: rgba(94, 103, 120, .5);
+}
+
+.text .text-top p .b-blue {
+  color: var(--primary-blue);
+}
+
+.notification.readed {
+  background: none;
+}
+
+.notification.private-message .avatar {
+  align-self: start;
+}
+
+.notification.private-message .avatar {
+  align-self: start;
+}
+
+.notification.readed .text-bottom p {
+  color: var(--neutral-dark-grayish-blue);
+  padding: 20px;
+  border: 1px solid var(--neutral-light-grayish-blue-2);
+  margin-top: 10px;
+}
+
+.notification.readed .text p b {
+  display: inline;
+}
+
+.notification.picture .avatar {
+  width: 8%;
+}
+
+.notification.picture .text {
+  width: 84%;
+}
+
+.notification.picture .commented-picture {
+  width: 8%;
+}
+
+.notification.picture .commented-picture img {
+  width: 100%;
+}
+
+/* responsive */
+@media screen and (max-width: 375px) {
+  * {
+    font-size: 14px;
+  }
+
+  .container {
+    width: 375px;
+  }
+
+  .app {
+    width: 375px;
+    margin: 0 auto;
+    padding: 15px 15px;
+  }
+
+  .notification .avatar {
+    width: 15%;
+  }
+
+  .notification .text {
+    width: 85%;
+  }
+
+  .notification.readed .text-bottom p {
+    font-size: 13px;
+  }
+
+  .notification.picture .avatar {
+    width: 15%;
+  }
+
+  .notification.picture .text {
+    width: 70%;
+  }
+
+  .notification.picture .commented-picture {
+    width: 15%;
+  }
+}
